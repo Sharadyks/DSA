@@ -1,0 +1,19 @@
+package Patterns;
+
+import java.util.Scanner;
+
+public class NUMRHP {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("WElcome to numerical half right pyramid maker!!");
+        System.out.print("Enter the no. of rows you want: ");
+        int a = input.nextInt();
+
+        for (int i = 1; i<=a; i++){
+            for (int j = 1; j<=i; j++){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+    }
+}
