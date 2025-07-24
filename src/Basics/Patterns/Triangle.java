@@ -1,19 +1,24 @@
-package Patterns;
+package Basics.Patterns;
+
+import java.util.Scanner;
 
 public class Triangle {
     public static void main(String[] args) {
-        for (int i=1; i<=5; i++){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the no.: ");
+        int n = input.nextInt();
+        for (int i=1; i<=n; i++){
             for (int j=1; j<=i; j++){
                 System.out.print("*");
             }
-            for (int k=1; k<=(5-i); k++){
+            for (int k=1; k<=(n-i); k++){
                 System.out.print(" ");
             }
             System.out.println();
         }
 
-        for (int i = 1; i<=4; i++){
-            for (int j=0; j<=(4-i); j++){
+        for (int i = 1; i<=n-1; i++){
+            for (int j=0; j<=((n-1)-i); j++){
                 System.out.print("*");
             }
             for (int k=1; k<=i; k++){

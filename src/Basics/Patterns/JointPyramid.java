@@ -1,4 +1,4 @@
-package Patterns;
+package Basics.Patterns;
 
 public class JointPyramid {
     public static void main(String[] args) {

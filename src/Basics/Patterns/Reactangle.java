@@ -1,4 +1,4 @@
-package Patterns;
+package Basics.Patterns;
 
 public class Reactangle {
     public static void main(String[] args) {
