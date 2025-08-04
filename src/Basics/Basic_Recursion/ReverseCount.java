@@ -8,14 +8,20 @@ public class ReverseCount {
         System.out.print("Enter the last number: ");
         int n = input.nextInt();
         revCount(n,0);
+        System.out.println("Happy new year");
     }
 
     static void revCount(int n, int i){
         if (n<=i){
             return;
-        } else
+        } else {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println(n);
-
+        }
         revCount(n-1,i);
     }
 }
