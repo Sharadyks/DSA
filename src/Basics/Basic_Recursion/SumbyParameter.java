@@ -11,10 +11,12 @@ public class SumbyParameter {
     }
 
    static void f1(int i, int sum){
-       if (i<0){
+       if (i<1){
            System.out.println(sum);
        } else {
            f1(i - 1, sum + i);
+
        }
+
     }
 }
